@@ -11,12 +11,15 @@ communicated through Web APIs.
 ## API Files
 Following API files provide the details of the APIs that are available through different access channels.
 
-File Name                                    | Description
--------------------------------------------- | ---------------------------------------
-[GETTING STARTED.md](GETTING%20STARTED.md)   | Getting started document before going through api documents
-[API REFERENCE.md](API%20REFERENCE.md)       | API reference
-[WALLETS.md](WALLETS.md)                     | Wallets
-[TRANSFERS.md](TRANSFERS.md)                 | Transfers
-[WEBHOOK.md](WEBHOOK.md)                     | Web hook
-[ENUMS.md](ENUMS.md)                         | Enums
-[ERROR CODES.md](ERROR%20CODES.md)           | Error codes
+File Name                                                     | Description
+------------------------------------------------------------- | ---------------------------------------
+[ApiReference.md](ApiReference.md)                            | Api reference
+[ConsolidatedFeedApi.md](ConsolidatedFeedApi.md)              | Consolidated feed api
+[ConsolidatedFeedWebsocket.md](ConsolidatedFeedWebsocket.md)  | Consolidated feed websocket
+[Enums.md](Enums.md)                                          | Enums
+[ErrorCodes.md](ErrorCodes.md)                                | Error codes
+[RestPrivate.md](RestPrivate.md)                              | Rest private
+[RestPublic.md](RestPublic.md)                                | Rest public
+[WebsocketPrivate.md](WebsocketPrivate.md)                    | Websocket private
+[WebsocketPublic.md](WebsocketPublic.md)                      | Websocket public
+
