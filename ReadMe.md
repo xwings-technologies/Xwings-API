@@ -6,6 +6,9 @@ The Secure Web APIs are designed to allow client applications to view and update
 protocol over the internet. The purpose of this document is to provide the urls and the specification of the messages
 communicated through Web APIs.
 
+API document can also be found at https://www.xwings.io/api/
+
+
 
 ---
 ## API Files
@@ -13,7 +16,7 @@ Following API files provide the details of the APIs that are available through d
 
 File Name                                                     | Description
 ------------------------------------------------------------- | ---------------------------------------
-[ApiReference.md](ApiReference.md)                            | Api reference
+[APIGeneralInfo.md](APIGeneralInfo.md)                        | Api reference
 [ConsolidatedFeedApi.md](ConsolidatedFeedApi.md)              | Consolidated feed api
 [ConsolidatedFeedWebsocket.md](ConsolidatedFeedWebsocket.md)  | Consolidated feed websocket
 [Enums.md](Enums.md)                                          | Enums
