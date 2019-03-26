@@ -31,6 +31,7 @@ You can restrict the functionality of API keys.
 ```java
 //Code for generate API-SIGN
 
+import org.apache.commons.codec.binary.Hex;
 import javax.crypto.Mac;
 import javax.crypto.spec.SecretKeySpec;
 import java.security.InvalidKeyException;
@@ -50,6 +51,17 @@ public class ApiSignGenerator {
         return new String(Hex.encodeHex(bytes));
      }
 
+    // If you want sent request to "https://api.xxxx.com/api/accounts", you can generate sign by doing this:
+    public static void getAccounts() throws InvalidKeyException, NoSuchAlgorithmException {
+        long timestamp = 1553596255786L; // System.currentTimeMillis();
+        String method = "GET";
+        String path = "/api/accounts";
+        String apiSecret = "NCtRU0JwZWZnVFVDZmlMRFduMk1hTFZDM05vS3g1Z3E1c1h6blB0RmxXRT0=";
+        String apiSign = generateApiSign(timestamp, method, path, apiSecret);
+        System.out.println("apiSign:" + apiSign);
+        // The console will print:"apiSign:e4c8f42e18b551dcebd5801bfa254498e98d20e0a5322b30c78a7004aa5a2669"
+    }
+
 }
 ```
 
@@ -64,6 +76,19 @@ public class ApiSignGenerator {
 		var encodedSecret = window.btoa(apiSecret);
 		return CryptoJS.HmacSHA256(message, encodedSecret).toString();
 	};
+
+	
+    // If you want sent request to "https://api.xxxx.com/api/accounts", you can generate sign by doing this:
+    function getAccounts() {
+        var timestamp = 1553596255786;//new Data().getMilliseconds();
+        var method = "GET";
+        var path = "/api/accounts";
+        var apiSecret = "NCtRU0JwZWZnVFVDZmlMRFduMk1hTFZDM05vS3g1Z3E1c1h6blB0RmxXRT0=";
+        var apiSign = generateApiSign(timestamp, method, path, apiSecret);
+        console.info("apiSign:" + apiSign);
+        // The console will print:"apiSign:e4c8f42e18b551dcebd5801bfa254498e98d20e0a5322b30c78a7004aa5a2669"
+	};
+
 </script>
 
 
