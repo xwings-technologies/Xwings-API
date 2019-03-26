@@ -74,7 +74,7 @@ public class ApiSignGenerator {
 All requests must contain the following headers:
 
 * API-KEY The api key
-* API-SIGN The hex-encoded signature by creating a sha256 HMAC using the base64 encoded secret Key on the prehash string timestamp + method + url and hex-encode the output
+* API-SIGN The hex-encoded signature by creating a sha256 HMAC using the base64 encoded secret Key on the prehash string timestamp + method + path and hex-encode the output
 * API-TIMESTAMP The same timestamp used in the signature. It should be in seconds since UNIX Epoch.
 * API-PASSCODE The passcode provided during api key creation
 
@@ -142,7 +142,10 @@ Returns an array of open orders; Pagination is supported.
 Data is returned in descending order of **lastModifiedTime**. Newest modified orders first, oldest last.
 
 ### Http request
-```GET /api/openOrders```
+
+```METHOD: GET```
+
+```PATH: /api/openOrders```
 
 ### Request Parameters
 Name           | Type(value)                                 | Mandatory   | Description
@@ -256,10 +259,13 @@ function request() {
 Returns an array of orders; Pagination is supported. Data is returned in descending order of **lastModifiedTime**. Newest first, oldest last.
 Cancelled orders in the most recent 2 days are included, the older cancelled orders are not.
 
-    Weight: 5
+	Weight: 5
 
 ### Http request
-```GET /api/allOrders```
+
+```METHOD: GET```
+
+```PATH: /api/allOrders```
     
 ### Request Parameters
 
@@ -358,10 +364,13 @@ function request() {
 
 Returns an array of fills; Pagination is supported. Data is returned in descending order. Newest first, oldest last.
 
-Weight: 5
+	Weight: 5
 
 ### Http request
-```GET /api/fills```
+
+```METHOD: GET```
+
+```PATH: /api/fills```
 
 ### Request Parameters
 
@@ -434,7 +443,10 @@ function request() {
 ```
 
 ### Http request
-```POST /api/newOrder```
+
+```METHOD: POST```
+
+```PATH: /api/newOrder```
 
 ### Request Parameters:
 
@@ -516,7 +528,10 @@ function request() {
 ```
 
 ### Http request
-```POST /api/cancelOrder```
+
+```METHOD: POST```
+
+```PATH: /api/cancelOrder```
 
 ### Request Parameters
 
@@ -579,7 +594,10 @@ function request() {
 This is to cancel all open orders with best effort.
 
 ### Http request
-```POST /api/cancelAllOrders```
+
+```METHOD: POST```
+
+```PATH: /api/cancelAllOrders```
 
 ### Request Parameters
 Name               | Type(value)    | Mandatory | Description
@@ -650,7 +668,10 @@ function request() {
 ```
 
 ### Http request
-```GET /api/accounts```
+
+```METHOD: GET```
+
+```PATH: /api/accounts```
 
 ### Success Response Body Array Json Fields
 Name             | Type(value)   | Mandatory | Description
@@ -716,10 +737,13 @@ function request() {
 }
 ```
 
+	Weight: 5
+
 ### Http request
-```GET /api/accountHistory```
-    
-    Weight: 5
+
+```METHOD: GET```
+
+```PATH: /api/accountHistory```
 
 List all the account transactions that either increases or decreases the
 account balance and available balance. Pagination is supported.
@@ -789,7 +813,10 @@ function request() {
 ```
 
 ### Http request
-```GET /api/pnls```
+
+```METHOD: GET```
+
+```PATH: /api/pnls```
 
 List all the pnls for each holding asset.
 
@@ -847,7 +874,10 @@ function request() {
 ```
 
 ### Http request
-```POST /api/withdraw```
+
+```METHOD: POST```
+
+```PATH: /api/withdraw```
 
 ### Request Parameters
 

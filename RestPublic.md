@@ -38,7 +38,10 @@ function request() {
 ```
 
 ### Http request
-```GET /api/instruments```
+
+```METHOD: GET```
+
+```PATH: /api/instruments```
 
 ### Request Parameters
 Name                  | Type(value)      | Mandatory   | Description
@@ -101,7 +104,10 @@ function request() {
 ```
 
 ### Http request
-```GET /api/ticker```
+
+```METHOD: GET```
+
+```PATH: /api/ticker```
 
 ### Request Parameters
 Name               | Type(value)      | Mandatory   | Description
@@ -158,7 +164,10 @@ function request() {
 ```
 
 ### Http request
-```GET /api/allTickers```
+
+```METHOD: GET```
+
+```PATH: /api/allTickers```
 
 ### Success Response Body Array Json Fields
 Name             | Type(value)      | Mandatory   | Description
@@ -219,7 +228,10 @@ function request() {
     Weight: 5
 
 ### Http request
-```GET /api/orderbook```
+
+```METHOD: GET```
+
+```PATH: /api/orderbook```
     
 ### Request Parameters
 Name            | Type(value)      | Mandatory   | Description
@@ -297,7 +309,10 @@ function request() {
 Returns most recent trades in an array.
 
 ### Http request
-```GET /api/trades```
+
+```METHOD: GET```
+
+```PATH: /api/trades```
     
 ### Request Parameters
 Name            | Type(value)      | Mandatory   | Description
@@ -366,7 +381,10 @@ function request() {
 It returns an array of data point stats.
 
 ### Http request
-```GET /api/charts```
+
+```METHOD: GET```
+
+```PATH: /api/charts```
 
 ### Request Parameters
 Name          | Type(value)     | Mandatory   | Description
@@ -417,4 +435,7 @@ function request() {
 It returns the server time in milliseconds since Unix Epoch
 
 ### Http request
-```GET /api/time```
+
+```METHOD: GET```
+
+```PATH: /api/time```

@@ -39,7 +39,10 @@ function request() {
 Get data sources of consolidated feed
 
 ### Http request
-```GET /api/dataSources```
+
+```METHOD: GET```
+
+```PATH: /api/dataSources```
 
 ### Request Parameters
 Name                  | Type(value)      | Mandatory   | Description
@@ -86,7 +89,10 @@ function request() {
 ```
 
 ### Http request
-```GET /api/ticker```
+
+```METHOD: GET```
+
+```PATH: /api/ticker```
 
 ### Request Parameters
 Name               | Type(value)      | Mandatory   | Description
@@ -142,7 +148,10 @@ function request() {
 ```
 
 ### Http request
-```GET /api/allTickers```
+
+```METHOD: GET```
+
+```PATH: /api/allTickers```
     
 ### Request Parameters
 Name               | Type(value)      | Mandatory   | Description
@@ -229,7 +238,10 @@ function request() {
 Weight: 5
 
 ### Http request
-```GET /api/orderbook```
+
+```METHOD: GET```
+
+```PATH: /api/orderbook```
 
 ### Request Parameters
 Name            | Type(value)      | Mandatory   | Description
@@ -302,7 +314,10 @@ function request() {
 Returns most recent trades in an array.
 
 ### Http request
-```GET /api/trades```
+
+```METHOD: GET```
+
+```PATH: /api/trades```
 
 ### Request Parameters
 Name            | Type(value)      | Mandatory   | Description
@@ -383,7 +398,10 @@ function request() {
 It returns an array of data point stats.
 
 ### Http request
-```GET /api/charts```
+
+```METHOD: GET```
+
+```PATH: /api/charts```
 
 ### Request Parameters
 Name          | Type(value)     | Mandatory   | Description

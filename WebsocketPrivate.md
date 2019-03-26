@@ -1,6 +1,7 @@
 # Websocket Private
 In order to receive the data on authenticated channels, the websocket session needs to be authenticated first
-by calling authenticate.
+by calling authenticate. Unlike rest requests, the method and path provided by the generated **apisign** are null.
+
 
 All requests need to provide the request time in seconds and must be within 5 seconds of the server time 
 or your request will be considered expired and rejected.  To change 5 second expiry, user can set **expiry**
